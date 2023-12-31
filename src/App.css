@@ -1,0 +1,55 @@
+#app {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+
+body.light {
+  background-color: rgb(217, 168, 168);
+  color: #000;
+  transition: background-color 1.5s, color 1.5s;
+
+}
+
+body.dark {
+  background-color:#2f1009;
+  color:rgb(169, 169, 145);
+  transition: background-color 1.5s, color 1.5s;
+
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .list {
+    max-width: none;
+  }
+}
+
+.copyright-container {
+  position: sticky;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+
+}

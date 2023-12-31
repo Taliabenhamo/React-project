@@ -1,0 +1,76 @@
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img img {
+    width: 100%;
+    max-width: 25%; 
+    border-radius: 10%;
+  }
+
+  
+  .contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+  }
+  
+  button {
+   
+    background-color:  rgba(0, 139, 139, 0.45);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .contact-info {
+    margin-top: 40px;
+  }
+  
+  .social-icons-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .social-icons-container svg {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons-container svg:hover {
+    color: #6976ff
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .contact-container {
+      padding: 10px;
+    }
+  
+    .social-icons-container {
+      gap: 10px;
+    }
+   
+  }

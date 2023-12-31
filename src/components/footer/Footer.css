@@ -1,0 +1,15 @@
+.footer-container {
+  margin-top: 20%;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+#icon {
+  color: white;
+}
+
+.wraper-icons {
+  background: linear-gradient(to left, #D2B48C, #5d0000);
+}

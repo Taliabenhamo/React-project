@@ -1,0 +1,42 @@
+.card-details{
+  padding: 3rem;
+}
+.container {
+  font-size: 25px;
+  padding: 5% 10%;
+  top: 5%;
+  background-color: rgba(229, 228, 161, 0.196);
+}
+
+.info {
+  padding: 5%;
+}
+
+#image {
+
+  border-radius: 10%;
+  animation: fadeIn 2s ease-in-out;
+
+}
+
+.image-item {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.272);
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-home {
+  margin-left: 4%;
+  border-radius: 10px;
+  background-color: rgba(0, 139, 139, 0.45);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.272);
+}

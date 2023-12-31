@@ -1,0 +1,30 @@
+.navbar{
+    background: linear-gradient(to right,#D2B48C, #5d0000);} 
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+} 
+
+
+.collapse.navbar-collapse {
+ 
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px; 
+}
+
+
+
+  .light-icon{
+    color:beige
+  }
