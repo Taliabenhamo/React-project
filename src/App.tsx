@@ -22,40 +22,39 @@ import Copyright from "./components/Copyright";
 
 
 function App() {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(savedTheme);
 
-  const [theme, setTheme] = useState('light');
   useEffect(() => {
 
     document.body.className = theme;
   }, [theme]);
 
   const toggleTheme = () => {
+
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+
+
     localStorage.setItem('theme', newTheme);
   };
 
-
-
-
   return (
-
-    <div
-      id='app'
-      className={theme}>
+    <div id='app' className={theme}>
       <CssBaseline />
       <Header
         toggleTheme={toggleTheme}
         currentTheme={theme}
-
       />
+
+
 
       <ToastContainer position="top-right" theme="light" />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/favcards" element={<AuthRoute><Favcards /></AuthRoute>}/>
+        <Route path="/favcards" element={<Favcards />}/>
         <Route path="/mycards" element={<AuthRoute><MyCards /></AuthRoute>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
